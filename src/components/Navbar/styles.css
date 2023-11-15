@@ -1,0 +1,132 @@
+.menu-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 10vh;
+  padding: 0 25px;
+}
+
+.logo {
+  color: #a0a0a0;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+  color: #a0a0a0;
+  display: block;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.2s;
+}
+
+.navbar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.cart {
+  color: #a0a0a0;
+  font-size: 28px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.num {
+  position: absolute;
+  top: 22%;
+  left: 98%;
+  color: #a0a0a0;
+  background-color: #303030;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 6px solid #303030;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: red;
+  color: #a0a0a0;
+  font-size: 14px;
+  margin-top: 25px;
+  border-radius: 35px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  color: #a0a0a0;
+}
+
+td {
+  color: #a0a0a0;
+}
+
+.submenu:hover {
+  cursor: pointer;
+}
+
+.cart:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #303030;
+  padding: 20px;
+  min-width: 400px;
+}
+
+.btn-2:hover {
+  background-color: red;
+}
